@@ -1,0 +1,18 @@
+.tabs {
+  margin-bottom: 75px;
+  &__items {
+    text-align: center;
+  }
+  &__item {
+    @extend %montserrat-600;
+    color: #333333;
+    text-decoration: none;
+    cursor: pointer;
+    &+& {
+      margin-left: 60px;
+    }
+    &--active {
+      border-bottom: 2px solid #FEA34A;
+    }
+  }
+}

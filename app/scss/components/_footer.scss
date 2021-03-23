@@ -1,0 +1,28 @@
+.footer {
+  &__nav {
+    padding-bottom: 26px;
+    border-bottom: 1px solid #333;
+  }
+  &__nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__socials {
+    padding: 55px 0 73px;
+    max-width: 316px;
+    margin: 0 auto;
+  }
+  &__link {
+    & + & {
+      margin-left: 24px;
+    }
+  }
+  &__copy {
+    @extend %montserrat-500;
+    font-size: 14px;
+    max-width: 240px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}

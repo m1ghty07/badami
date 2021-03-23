@@ -1,0 +1,260 @@
+.title {
+  @extend %montserrat-700;
+  font-size: 36px;
+  text-align: center;
+}
+.top {
+  &__inner {
+    background-image: url(../images/main-bg.jpg);
+    background-repeat: no-repeat;
+    min-height: 557px;
+  }
+  &__title {
+    color: #ffffff;
+    font-size: 48px;
+    max-width: 550px;
+    line-height: 1;
+    margin-left: 102px;
+    padding-top: 60px;
+    & span {
+      @extend %montserrat-600;
+      font-size: 18px;
+      line-height: 1;
+      margin-left: 22px;
+    }
+  }
+}
+
+.book {
+  margin-top: -130px;
+  margin-bottom: 110px;
+
+  &__inner {
+    box-shadow: 0 7px 6px rgba(0, 0, 0, 0.25);
+    background-color: #583c2c;
+    padding: 30px 45px 30px 0;
+    max-width: 1080px;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 75px 20px;
+    & + & {
+      border-left: 1px solid #fff;
+    }
+    & span {
+      color: #ffffff;
+      @extend %montserrat-700;
+      font-size: 18px;
+      margin-bottom: 35px;
+    }
+  }
+  &__btn {
+    display: inline-block;
+  }
+}
+
+.jq-selectbox__select {
+  height: 32px;
+  padding: 0 45px 0 10px;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  @extend %montserrat-600;
+  font-size: 24px;
+  color: #fff;
+  text-shadow: none;
+  &:hover {
+    background: transparent;
+  }
+}
+
+.jq-selectbox__trigger {
+  border-left: none;
+}
+
+.jq-selectbox__select-text {
+  width: 100% !important;
+}
+
+.jq-selectbox__trigger-arrow {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #fff;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+}
+
+.about {
+  margin-bottom: 96px;
+  &__inner {
+    padding-top: 26px;
+    display: flex;
+  }
+  &__img {
+    margin-right: 41px;
+  }
+  &__text {
+    max-width: 620px;
+    color: #222222;
+    @extend %montserrat-500;
+    font-size: 20px;
+    line-height: 27.76px;
+    & p {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.facilities {
+  padding-bottom: 100px;
+  &__title {
+    margin-bottom: 52px;
+  }
+  &__text {
+    text-align: center;
+    color: #333333;
+    @extend %montserrat-500;
+    font-size: 18px;
+    margin-bottom: 53px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    text-align: center;
+    max-width: 350px;
+  }
+  &__main {
+    @extend %mulish-700;
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  &__descr {
+    @extend %montserrat-500;
+    font-size: 14px;
+    color: #333333;
+  }
+}
+
+.gallery {
+  margin-bottom: 50px;
+  &__title {
+    margin-bottom: 26px;
+  }
+  &__item {
+    max-width: 255px;
+  }
+  &__img {
+    margin-bottom: 32px;
+    max-width: 255px;
+    min-height: 260px;
+    & img {
+      width: 100%;
+    }
+  }
+  &__name {
+    @extend %montserrat-600;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  &__text {
+    @extend %montserrat-500;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+.reach {
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__inner {
+    display: flex;
+  }
+  &__info {
+    margin-left: 77px;
+    @extend %dmsans-700;
+    font-size: 20px;
+    & p {
+      font-size: 24px;
+      margin-bottom: 22px;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/location.png);
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 25px;
+        left: -35px;
+        top: 5px;
+      }
+    }
+  }
+  &__info-item {
+    list-style-image: url(../images/verified.png) !important;
+    margin-bottom: 10px;
+  }
+  &__list:not(last-child) {
+    margin-bottom: 81px;
+  }
+}
+
+.connect {
+  margin-bottom: 85px;
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__form {
+    @extend %montserrat-500;
+    max-width: 845px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__name,
+  &__phone {
+    padding: 13px 100px 13px 25px;
+    height: 48px;
+    width: 47%;
+    margin-bottom: 35px;
+  }
+  &__name {
+    margin-right: 24px;
+  }
+  &__phone {
+    margin-left: 24px;
+  }
+  &__email {
+    padding: 13px 100px 13px 25px;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 34px;
+  }
+  &__textarea {
+    padding: 13px 100px 13px 25px;
+    width: 100%;
+    margin-bottom: 35px;
+    height: 170px;
+    resize: none;
+  }
+  &__btn {
+    margin: 0 auto;
+  }
+}

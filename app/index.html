@@ -1,16 +1,906 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
-  
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo">
+            <img src="images/logo.png" alt="logo" class="logo__img" />
+          </div>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="" class="menu__link menu__link--active">Home</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">About Us</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Gallery</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link">Facilities</a>
+              </li>
+            </ul>
+            <button class="menu__btn btn" type="button">Book Now</button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="top">
+        <div class="container">
+          <div class="top__inner">
+            <h2 class="top__title">
+              Hotel Badami Court
+              <span>With all modern comforts and amenities</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <div class="book">
+        <div class="container">
+          <div class="book__inner">
+            <form class="book__form" action="#">
+              <div class="book__item">
+                <span>Check In</span>
+                <select class="book__select">
+                  <option value="value1">12 / Jan</option>
+                  <option value="value2" selected>14 / Jan</option>
+                  <option value="value3">15 / Jan</option>
+                </select>
+              </div>
+
+              <div class="book__item">
+                <span>Check Out</span>
+                <select class="book__select">
+                  <option value="value1">16 / Jan</option>
+                  <option value="value2" selected>18 / Jan</option>
+                  <option value="value3">19 / Jan</option>
+                </select>
+              </div>
+
+              <div class="book__item">
+                <span>Guests</span>
+                <select class="book__select">
+                  <option value="value1">1</option>
+                  <option value="value2" selected>2</option>
+                  <option value="value3">3</option>
+                </select>
+              </div>
+              <button class="book__btn btn" type="submit">Book Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <section class="about">
+        <div class="container">
+          <h2 class="about__title title">About Us</h2>
+          <div class="about__inner">
+            <img class="about__img" src="images/about.jpg" alt="" />
+            <div class="about__text">
+              <p>
+                The setting is splendid, the hills enclosing the plains can be
+                seen from afar over which looms two rocky rust red sandstone
+                spurs on which the Chalukyas built their fortress. Badami a
+                small temple town also known as Vatapi where the Chalukya’s
+                capital stood in the sixth century under the glory of Pulakeshi
+                II, described as the prosperous town. It’s strong army with
+                hundreds of war elephants and the splendid monuments.
+              </p>
+              <a class="about__link" href="#">Read More...</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="facilities">
+        <div class="container">
+          <h2 class="facilities__title title">Facilities</h2>
+          <div class="facilities__inner">
+            <div class="facilities__text">
+              <p>
+                Hotel Badami Court spread over 2 acres of green and houses 25
+                deluxe air-condition rooms, 2 suites and a family 4 bedded room
+                with all modern comforts and amenities.
+              </p>
+            </div>
+            <div class="tabs__wrapper">
+              <div class="tabs">
+                <nav class="tabs__items">
+                  <a class="tabs__item"> Recreation </a>
+                  <a class="tabs__item">Dinning</a>
+                  <a class="tabs__item">Wellness</a>
+                  <a class="tabs__item">LifeStyle</a>
+                  <a class="tabs__item">Events</a>
+                  <a class="tabs__item">Services</a>
+                </nav>
+              </div>
+              <div class="tabs__content">
+                <div class="tabs__block">
+                  <div class="facilities__items">
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#briefcase"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur iuvaret vulputate sed.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#life"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur iuvaret vulputate sed.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#key"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur iuvaret vulputate sed.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__block">
+                  <div class="facilities__items">
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#briefcase"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur iuvaret vulputate sed.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#life"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur iuvaret vulputate sed.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#briefcase"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur iuvaret vulputate sed.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__block">
+                  <div class="facilities__items">
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#briefcase"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur iuvaret vulputate sed.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#briefcase"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur iuvaret vulputate sed.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#life"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Quisquam voluptates quas labore officiis debitis
+                          deleniti nulla, dignissimos sunt perspiciatis a at
+                          possimus, impedit voluptatum. Fuga ipsum quo id autem
+                          modi.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__block">
+                  <div class="facilities__items">
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#briefcase"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing
+                          elit. Voluptates iure asperiores eum! Corporis minima
+                          atque perferendis molestiae magnam accusamus
+                          assumenda, temporibus nisi, porro beatae et natus,
+                          error dignissimos cum repudiandae.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#briefcase"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Nisi officiis dolorem ex velit consectetur
+                          ducimus dicta quaerat eaque illo? Reiciendis ea
+                          consequuntur molestiae ipsam laboriosam minus suscipit
+                          consectetur dicta dignissimos.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#key"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit. Iure illo itaque tempora necessitatibus dolores
+                          doloremque accusantium cumque sequi, praesentium modi
+                          excepturi temporibus distinctio aut exercitationem
+                          quae error amet impedit dolore?
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__block">
+                  <div class="facilities__items">
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#briefcase"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur iuvaret vulputate sed.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#life"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur iuvaret vulputate sed.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#key"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur iuvaret vulputate sed.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__block">
+                  <div class="facilities__items">
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#briefcase"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur iuvaret vulputate sed.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#key"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Cumque possimus porro, vel velit recusandae,
+                          reiciendis asperiores adipisci error quis aspernatur
+                          culpa omnis dicta amet id veritatis assumenda alias
+                          cupiditate ratione.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="facilities__item">
+                      <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#briefcase"></use>
+                      </svg>
+                      <div class="facilities__main">Currency exchange</div>
+                      <div class="facilities__descr">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Error maiores tempore animi? Molestias, aliquam
+                          perferendis natus earum esse
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="container">
+          <h2 class="gallery__title title">Gallery</h2>
+          <div class="gallery__inner">
+            <div class="tabs__wrapper">
+              <div class="tabs">
+                <nav class="tabs__items">
+                  <a class="tabs__item"> Recreation </a>
+                  <a class="tabs__item">Wellness</a>
+                  <a class="tabs__item">Rooms</a>
+                  <a class="tabs__item">Events</a>
+                  <a class="tabs__item">Services</a>
+                </nav>
+              </div>
+              <div class="tabs__content">
+                <div class="tabs__block">
+                  <div class="gallery__items">
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/2.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/2.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/3.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/4.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/2.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__block">
+                  <div class="gallery__items">
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/2.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/2.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/3.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/4.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/2.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__block">
+                  <div class="gallery__items">
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/3.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/3.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/4.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/4.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/2.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__block">
+                  <div class="gallery__items">
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/4.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/4.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/4.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/4.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/4.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__block">
+                  <div class="gallery__items">
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/2.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/2.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/2.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/2.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="gallery__item">
+                      <div class="gallery__img">
+                        <img src="images/gallery/2.jpg" alt="" />
+                      </div>
+                      <div class="gallery__name">
+                        <span>Ad eos saepe lucilius</span>
+                      </div>
+                      <div class="gallery__text">
+                        <p>
+                          At eripuit signiferumque sea, vel ad mucius molestie,
+                          cu labitur.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reach">
+        <div class="container">
+          <h3 class="reach__title title">Reach Us</h3>
+          <div class="reach__inner">
+            <div class="reach__map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15345.799925562424!2d75.6752658!3d15.9378606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7942b584b00fd4d0!2sHOTEL%20BADAMI%20COURT!5e0!3m2!1sru!2sua!4v1616507578521!5m2!1sru!2sua"
+                width="729"
+                height="600"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <div class="reach__info">
+              <p>Nearest Top Sights  to visit :</p>
+              <ul class="reach__list">
+                <li class="reach__info-item">2 kms To Badami Cave Temple</li>
+                <li class="reach__info-item">5 Kms To Bhanshankari Temple</li>
+                <li class="reach__info-item">
+                  17 kms To Pattadakal Temple complex
+                </li>
+                <li class="reach__info-item">29 Kms To Aihole Temple</li>
+              </ul>
+ <ul class="reach__list">
+   <p>Nearest Public Transportations :</p>
+                <li class="reach__info-item">1.5 kms  to Badami Railway Station Or Bus Stand</li>
+                <li class="reach__info-item">95 kms to Hubli Airport
+</li>
+                <li class="reach__info-item">
+                  290 kms to Goa Airport
+                </li>
+                <li class="reach__info-item">160 Kms  to Hampi /Hospet</li>
+                <li class="reach__info-item">120 Kms to Bijapur</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="connect">
+        <div class="container">
+          <h3 class="connect__title title">We would love to hear from you</h3>
+          <div class="connect__inner">
+            <form action="#" class="connect__form">
+              <input class="connect__name" required type="text" placeholder="Name">
+              <input class="connect__phone" required type="tel" placeholder="Phone No.">
+              <input class="connect__email" required type="email" placeholder="Email">
+              <textarea class="connect__textarea" name="suggestion" placeholder="Your Query / Suggestion"></textarea>
+              <button class="connect__btn button" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link menu__link">Home</a>
+              </li>
+               <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link menu__link">Facilities</a>
+              </li>
+                <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link menu__link">Gallery</a>
+              </li>
+              <div class="logo">
+            <img src="images/logo.png" alt="logo" class="logo__img" />
+          </div>
+                <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link menu__link">About</a>
+              </li>
+                <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link menu__link">Blog</a>
+              </li>
+                <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link menu__link">Contact</a>
+              </li>
+            </ul>
+          </nav>   
+          <div class="footer__socials">
+            <a href="#" class="footer__link">
+              <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#facebook"></use>
+                      </svg>
+            </a>
+              <a href="#" class="footer__link">
+              <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#inst"></use>
+                      </svg>
+            </a>
+              <a href="#" class="footer__link">
+              <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#twitter"></use>
+                      </svg>
+            </a>
+              <a href="#" class="footer__link">
+              <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#viber"></use>
+                      </svg>
+            </a>
+              <a href="#" class="footer__link">
+              <svg class="icon" width="40" height="40">
+                        <use xlink:href="images/sprites.svg#youtube"></use>
+                      </svg>
+            </a>
+          </div>
+          <div class="footer__copy">
+            <p>© 2010 — 2020 Privacy — Terms</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
-  <script src="js/main.min.js"> </script>
-</body>
+
+    <script src="js/main.min.js"></script>
+  </body>
 </html>

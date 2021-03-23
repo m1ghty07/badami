@@ -1,0 +1,46 @@
+.header {
+  height: 90px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  margin-left: 16px;
+}
+
+.menu {
+  display: flex;
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    & + & {
+      margin-left: 62px;
+    }
+  }
+  &__link {
+    color: #333333;
+    @extend %montserrat-700;
+    font-size: 18px;
+    text-decoration: none;
+    &--active {
+      border-bottom: 2px solid #fea34a;
+    }
+  }
+}
+
+.btn {
+   margin-left: 42px;
+    border: none;
+    padding: 16px 34px;
+    color: #ffffff;
+    @extend %montserrat-700;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(249.32deg, #fea34a -17.52%, rgba(255, 255, 255, 0) 128.58%), #f40000;
+}
