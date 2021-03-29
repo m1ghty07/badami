@@ -15,27 +15,39 @@
             <img src="images/logo.png" alt="logo" class="logo__img" />
           </div>
           <nav class="menu">
+            <button class="menu__burger" type="button">
+              <span></span>
+            </button>
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="" class="menu__link menu__link--active">Home</a>
+                <a href="" class="menu__link">Home</a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__link">About Us</a>
+                <a href="#about" class="menu__link">About Us</a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__link">Gallery</a>
+                <a href="#gallery" class="menu__link">Gallery</a>
               </li>
               <li class="menu__item">
-                <a href="" class="menu__link">Facilities</a>
+                <a href="#facilities" class="menu__link">Facilities</a>
               </li>
+              <button
+                data-modal
+                class="menu__btn btn btn__mobile"
+                type="button"
+              >
+                Book Now
+              </button>
             </ul>
-            <button class="menu__btn btn" type="button">Book Now</button>
+            <button data-modal class="menu__btn btn" type="button">
+              Book Now
+            </button>
           </nav>
         </div>
       </div>
     </header>
 
-    <main class="main">
+     <main class="main">
       <section class="top">
         <div class="container">
           <div class="top__inner">
@@ -47,7 +59,7 @@
         </div>
       </section>
 
-      <div class="book">
+      <div class="book" id="#book">
         <div class="container">
           <div class="book__inner">
             <form class="book__form" action="#">
@@ -83,7 +95,7 @@
         </div>
       </div>
 
-      <section class="about">
+     <section class="about" id="about">
         <div class="container">
           <h2 class="about__title title">About Us</h2>
           <div class="about__inner">
@@ -104,7 +116,7 @@
         </div>
       </section>
 
-      <section class="facilities">
+      <section class="facilities" id="facilities">
         <div class="container">
           <h2 class="facilities__title title">Facilities</h2>
           <div class="facilities__inner">
@@ -389,7 +401,7 @@
         </div>
       </section>
 
-      <section class="gallery">
+       <section class="gallery" id="gallery">
         <div class="container">
           <h2 class="gallery__title title">Gallery</h2>
           <div class="gallery__inner">
@@ -780,7 +792,7 @@
         </div>
       </section>
 
-      <section class="reach">
+      <section class="reach" id="reach">
         <div class="container">
           <h3 class="reach__title title">Reach Us</h3>
           <div class="reach__inner">
@@ -899,7 +911,19 @@
       </div>
     </footer>
 
-
+   <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div class="modal__close" data-close>&times;</div>
+                    <div class="modal__title">Welcome to Badami Court!</div>
+                    <input required placeholder="Your name" name="name" type="text" class="modal__input">
+                    <input required placeholder="Your email" name="email" type="email" class="modal__input">
+                    <button class="btn btn_dark btn_min">Contact me</button>
+                </form>
+            </div>
+        </div>
+    </div> 
 
     <script src="js/main.min.js"></script>
   </body>

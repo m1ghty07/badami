@@ -13,6 +13,9 @@
 
 .menu {
   display: flex;
+  &__burger {
+    display: none;
+  }
   &__list {
     display: flex;
     align-items: center;
@@ -27,9 +30,6 @@
     @extend %montserrat-700;
     font-size: 18px;
     text-decoration: none;
-    &--active {
-      border-bottom: 2px solid #fea34a;
-    }
   }
 }
 
@@ -43,4 +43,7 @@
     position: relative;
     z-index: 1;
     background: linear-gradient(249.32deg, #fea34a -17.52%, rgba(255, 255, 255, 0) 128.58%), #f40000;
+    &__mobile {
+      display: none;
+    }
 }

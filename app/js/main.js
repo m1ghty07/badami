@@ -2,7 +2,19 @@
   $(function () {
     $(".book__select, .book__input").styler();
   });
+   $(function () {
+     $(".select__num, .select__input").styler();
+   });
 })(jQuery);
+
+const btn = document.querySelector(".menu__burger"),
+  menuList = document.querySelector(".menu__list");
+
+btn.addEventListener("click", () => {
+  menuList.classList.toggle("active");
+  document.body.classList.toggle('lock');
+});
+
 
 document.querySelectorAll(".tabs__wrapper").forEach((e) => {
   const tabs = e.querySelectorAll(".tabs__item"),
@@ -40,10 +52,107 @@ document.querySelectorAll(".tabs__wrapper").forEach((e) => {
   });
 });
 
+const modalTrigger = document.querySelectorAll("[data-modal]"),
+  modal = document.querySelector(".modal");
+
+function openModal() {
+  modal.classList.add("show");
+  modal.classList.remove("hide");
+  document.body.style.overflow = "hidden";
+  clearInterval(modalTimerId);
+}
+
+modalTrigger.forEach((btn) => {
+  btn.addEventListener("click", openModal);
+});
+
+function closeModal() {
+  modal.classList.add("hide");
+  modal.classList.remove("show");
+  document.body.style.overflow = "";
+  window.removeEventListener("scroll", showModalByScroll);
+}
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal || e.target.getAttribute("data-close") == "") {
+    closeModal();
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.code === "Escape" && modal.classList.contains("show")) {
+    closeModal();
+  }
+});
+
+const modalTimerId = setInterval(openModal, 50000);
+
+function showModalByScroll() {
+  if (
+    window.pageYOffset + document.documentElement.clientHeight ===
+    document.documentElement.scrollHeight
+  ) {
+    openModal();
+  }
+}
+window.addEventListener("scroll", showModalByScroll);
+
+
+ 
+
+$(function(){
+
+  $(".menu, .header").on("click", "a", function (event) {
+    
+    event.preventDefault();
+
+    var id = $(this).attr('href'),
+
+      top = $(id).offset().top;
+
+    $('body,html').animate({ scrollTop: top }, 1500);
+  });
+});
+
+
 $(document).ready(function () {
   $(".gallery__items").slick({
     infinite: true,
+    arrows: true,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });
+
+
+
+
+
+
+
