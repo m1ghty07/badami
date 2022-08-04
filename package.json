@@ -1,26 +1,27 @@
 {
-  "name": "start_gulp",
+  "name": "badami",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Serhii Dulchenko",
+  "author": "m1ghty07",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^7.1.0",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
-    "jquery": "^3.5.1",
-    "jquery-form-styler": "^2.0.2"
+    "jquery": "^3.5.1"
   },
   "dependencies": {
-    "slick-carousel": "^1.8.1"
+    "sass": "^1.54.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.3.2"
   }
 }

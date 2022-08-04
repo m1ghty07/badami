@@ -1,12 +1,3 @@
-(function ($) {
-  $(function () {
-    $(".book__select, .book__input").styler();
-  });
-   $(function () {
-     $(".select__num, .select__input").styler();
-   });
-})(jQuery);
-
 const btn = document.querySelector(".menu__burger"),
   menuList = document.querySelector(".menu__list");
 
@@ -100,55 +91,8 @@ window.addEventListener("scroll", showModalByScroll);
 
  
 
-$(function(){
-
-  $(".menu, .header").on("click", "a", function (event) {
-    
-    event.preventDefault();
-
-    var id = $(this).attr('href'),
-
-      top = $(id).offset().top;
-
-    $('body,html').animate({ scrollTop: top }, 1500);
-  });
-});
 
 
-$(document).ready(function () {
-  $(".gallery__items").slick({
-    infinite: true,
-    arrows: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          infinite: true,
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          infinite: true,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  });
-});
 
 
 

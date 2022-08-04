@@ -30,6 +30,11 @@
     @extend %montserrat-700;
     font-size: 18px;
     text-decoration: none;
+    cursor: pointer;
+    transition: color .3s ease;
+    &:hover {
+      color: #f40000;
+    }
   }
 }
 

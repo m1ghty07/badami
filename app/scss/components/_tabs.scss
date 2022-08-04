@@ -3,6 +3,9 @@
   &__items {
     text-align: center;
   }
+  &__content {
+    text-align: center;
+  }
   &__item {
     @extend %montserrat-600;
     color: #333333;

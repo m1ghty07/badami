@@ -1,6 +1,6 @@
 const { src, dest, watch, parallel, series } = require('gulp');
 
-const scss             = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const concat           = require('gulp-concat');
 const autoprefixer     = require('gulp-autoprefixer');
 const uglify           = require('gulp-uglify');
@@ -19,7 +19,7 @@ function browsersync() {
 
 function styles() {
    return src('app/scss/style.scss')
-   .pipe(scss({outputStyle: 'compressed'}))
+   .pipe(sass({outputStyle: 'compressed'}))
    .pipe(concat('style.min.css'))
      .pipe(autoprefixer({
        overrideBrowserslist: ['last 10 versions'],
@@ -34,7 +34,6 @@ function scripts() {
     "node_modules/jquery/dist/jquery.js",
     "app/js/main.js",
     "node_modules/slick-carousel/slick/slick.js",
-    "node_modules/jquery-form-styler/dist/jquery.formstyler.min.js",
   ])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
