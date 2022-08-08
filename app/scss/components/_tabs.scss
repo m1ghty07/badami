@@ -8,14 +8,14 @@
   }
   &__item {
     @extend %montserrat-600;
-    color: #333333;
+    color: $text;
     text-decoration: none;
     cursor: pointer;
-    &+& {
+    & + & {
       margin-left: 60px;
     }
     &--active {
-      border-bottom: 2px solid #FEA34A;
+      border-bottom: 2px solid $orange;
     }
   }
 }

@@ -63,8 +63,8 @@
     border-color: #cecece38;
     border-radius: 7px;
     cursor: pointer;
-    color: #fff;   
-    transition: border-color .3s ease;
+    color: #fff;
+    transition: border-color 0.3s ease;
     &:hover {
       border-color: #cececed5;
     }
@@ -99,7 +99,7 @@
   }
   &__text {
     text-align: center;
-    color: #333333;
+    color: $text;
     @extend %montserrat-500;
     font-size: 18px;
     margin-bottom: 53px;
@@ -115,13 +115,13 @@
   &__main {
     @extend %mulish-700;
     font-size: 18px;
-    color: #333333;
+    color: $text;
     margin-bottom: 15px;
   }
   &__descr {
     @extend %montserrat-500;
     font-size: 14px;
-    color: #333333;
+    color: $text;
   }
 }
 
@@ -129,6 +129,38 @@
   margin-bottom: 50px;
   &__title {
     margin-bottom: 26px;
+  }
+  &__items {
+    position: relative;
+    & {
+      .slick-prev,
+      .slick-next {
+        font-size: 0;
+        position: absolute;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+      }
+      .slick-prev {
+        left: 0;
+        z-index: 99;
+        top: calc(50% - 60px);
+        background-image: url(../../images/gallery/left-arrow.svg);
+        background-repeat: no-repeat;
+        width: 65px;
+        height: 95px;
+      }
+      .slick-next {
+        right: -45px;
+        bottom: calc(50% - 34px);
+        background-image: url(../../images/gallery/right-arrow.svg);
+        background-repeat: no-repeat;
+        width: 65px;
+        height: 95px;
+      }
+    }
   }
   &__item {
     max-width: 255px;
@@ -154,11 +186,6 @@
   }
 }
 
-.slick-prev,
-.slick-next {
-  display: none !important;
-}
-
 .reach {
   &__title {
     margin-bottom: 50px;
@@ -175,7 +202,7 @@
       margin-bottom: 22px;
       position: relative;
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         background-image: url(../images/location.png);
         background-repeat: no-repeat;
@@ -237,4 +264,3 @@
     margin: 0 auto;
   }
 }
-
