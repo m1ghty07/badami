@@ -8,7 +8,12 @@
     background-image: url(../images/main-bg.jpg);
     background-repeat: no-repeat;
     height: 555px;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
   }
   &__title {
     color: #ffffff;
@@ -16,12 +21,22 @@
     max-width: 550px;
     line-height: 1;
     margin-left: 102px;
+    @media (max-width: 768px) {
+      margin-left: 0;
+      text-align: center;
+      font-size: 36px;
+    }
     padding-top: 60px;
     & span {
       @extend %montserrat-600;
       font-size: 18px;
       line-height: 1;
       margin-left: 22px;
+      @media (max-width: 768px) {
+        margin-left: 0;
+        display: block;
+        margin-top: 40px;
+      }
     }
   }
 }
@@ -29,34 +44,60 @@
 .book {
   margin-top: -130px;
   margin-bottom: 110px;
+  @media (max-width: 768px) {
+    margin-top: -80px;
+  }
 
   &__inner {
     box-shadow: 0 7px 6px rgba(0, 0, 0, 0.25);
     background-color: #583c2c;
     padding: 30px 45px 30px 0;
     max-width: 1080px;
+    @media (max-width: 768px) {
+      padding: 30px 45px;
+      max-width: 520px;
+      border-radius: 5px;
+    }
   }
   &__form {
     display: flex;
     align-items: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 75px 20px;
+
+    @media (max-width: 768px) {
+      border-top: 1px solid #fff;
+      padding: 20px 75px;
+    }
     & + & {
       border-left: 1px solid #fff;
+      @media (max-width: 768px) {
+        border-left: none;
+      }
     }
     & span {
       color: #ffffff;
       @extend %montserrat-700;
       font-size: 18px;
       margin-bottom: 35px;
+      @media (max-width: 768px) {
+        margin-bottom: 15px;
+      }
+    }
+    @media (max-width: 768px) {
+      width: 100%;
     }
   }
   &__btn {
     display: inline-block;
+    padding: 16px 34px;
   }
   &__select {
     background-color: #583c2c;
@@ -76,9 +117,16 @@
   &__inner {
     padding-top: 26px;
     display: flex;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__img {
     margin-right: 41px;
+    @media (max-width: 768px) {
+      margin-right: 0;
+    }
   }
   &__text {
     max-width: 620px;
@@ -88,6 +136,10 @@
     line-height: 27.76px;
     & p {
       margin-bottom: 15px;
+      @media (max-width: 768px) {
+        margin-bottom: 0;
+        margin-top: 30px;
+      }
     }
   }
 }
@@ -130,9 +182,38 @@
   &__title {
     margin-bottom: 26px;
   }
-  // &__items {
-  //   align-items: center;
-  // }
+  &__items {
+    position: relative;
+    & {
+      .slick-prev,
+      .slick-next {
+        font-size: 0;
+        position: absolute;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+      }
+      .slick-prev {
+        left: 0;
+        z-index: 99;
+        top: calc(50% - 60px);
+        background-image: url(../../images/gallery/left-arrow.svg);
+        background-repeat: no-repeat;
+        width: 65px;
+        height: 95px;
+      }
+      .slick-next {
+        right: -45px;
+        bottom: calc(50% - 34px);
+        background-image: url(../../images/gallery/right-arrow.svg);
+        background-repeat: no-repeat;
+        width: 65px;
+        height: 95px;
+      }
+    }
+  }
   &__item {
     max-width: 255px;
     margin: 0 15px;
@@ -235,5 +316,3 @@
     margin: 0 auto;
   }
 }
-
-
